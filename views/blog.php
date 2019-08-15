@@ -22,6 +22,5 @@ foreach($posts as $post){
         </div>
     </div>
 </div>
-
 <?php
 }
