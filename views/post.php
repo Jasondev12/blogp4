@@ -15,7 +15,6 @@ if($post == false){
 </div>
 
 
-
 <div class="container">
 
 
