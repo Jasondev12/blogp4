@@ -1,0 +1,7 @@
+/*	Import other CSS files in specific order. */
+
+
+@import url('home.css');
+@import url('fonts.css');
+@import url('style.css');
+@import url('animate.css');
