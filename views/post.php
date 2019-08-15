@@ -42,6 +42,23 @@ if($post == false){
                 $errors['email'] = "L'adresse email n'est pas valide";
             }
         }
+
+        if(!empty($errors)){
+          ?>
+    <div class="card-red">
+        <div class="card-content white-text">
+            <?php
+              foreach($errors as $error){
+                echo $error."<br/>";
+              }
+              ?>
+        </div>
+    </div>
+    <?php
+        }else{
+          die("OK");
+        }
+
     }
     ?>
 
