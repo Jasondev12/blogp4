@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $dbhost = 'localhost';
 $dbname = 'blogp4';
 $dbuser = 'root';

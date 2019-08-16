@@ -1,5 +1,5 @@
 <?php
-include 'models/connect.models.php';
+include '../models/connect.models.php';
 
     $views = scandir('views/');
     if(isset($_GET['page']) && !empty($_GET['page'])){
@@ -9,7 +9,7 @@ include 'models/connect.models.php';
             $page = "error";
         }
     }else{
-            $page = "home";
+            $page = "dashboard";
     }
 
 $views_models = scandir('models/');
@@ -27,21 +27,22 @@ if(in_array($page.'.models.php',$views_models)){
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css" media="screen,projection" />
     <!--Import import.css-->
-    <link href="css/import.css" rel="stylesheet">
+    <link href="../css/import.css" rel="stylesheet">
     <!--Import font Greatvibes-->
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
-    <title>Blog Jean Forteroche | Accueil</title>
+    <title>Blog Jean Forteroche | Dashboard</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-
-
     <?php
-        include"views/include/topbar.php";
+    if($page != 'login' && !isset($_SESSION['admin'])){
+        header("Location:index.php?page=login");
+    }
+        include "body/topbar.php";
     ?>
 
     <div class="container">
@@ -54,8 +55,8 @@ if(in_array($page.'.models.php',$views_models)){
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
 
     <?php
     $views_js = scandir('js/');
