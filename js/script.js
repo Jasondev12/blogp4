@@ -1,8 +1,5 @@
-  $(document).ready(function(){
-    $('.materialboxed').materialbox();
+  $(document).ready(function () {
+      $('.materialboxed').materialbox();
+      $('.sidenav').sidenav();
+      $('select').formSelect();
   });
-
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-
