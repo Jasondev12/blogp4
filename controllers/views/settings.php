@@ -1,5 +1,3 @@
-
-
 <h2>Paramètres</h2>
 <div class="row">
     <div class="col m6 s12">
@@ -74,8 +72,6 @@
                     add_modo($name,$email,$role,$token);
                 }
             }
-
-
         ?>
 
         <form method="post">
