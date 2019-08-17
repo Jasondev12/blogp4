@@ -1,13 +1,16 @@
 <?php
 
+    if(admin()!=1){
+        header("Location:index.php?page=dashboard");
+    }
 
- $post = get_post();
+
+    $post = get_post();
     if($post == false){
         header("Location:index.php?page=error");
     }
+
 ?>
-
-
 </div>
 <div class="parallax-container">
     <div class="parallax">

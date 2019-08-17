@@ -1,3 +1,11 @@
+<?php
+if(admin()!=1){
+    header("Location:index.php?page=dashboard");
+}
+
+?>
+
+
 <h2>Paramètres</h2>
 <div class="row">
     <div class="col m6 s12">

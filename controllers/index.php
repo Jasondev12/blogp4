@@ -39,7 +39,7 @@ if(in_array($page.'.models.php',$views_models)){
 
 <body>
     <?php
-    if($page != 'login' && !isset($_SESSION['admin'])){
+    if($page != 'login' && $page != 'new' && !isset($_SESSION['admin'])){
         header("Location:index.php?page=login");
     }
         include "body/topbar.php";
