@@ -1,6 +1,6 @@
 <?php
 
-if(hasnt_password() == 0){
+if(hasnt_password() == 1){
     header("Location:index.php?page=dashboard");
 }
 
