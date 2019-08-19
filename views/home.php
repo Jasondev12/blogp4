@@ -1,5 +1,5 @@
 <h1>Page d'accueil</h1>
-<div class="row">
+<div class="row" id="row-home">
 <?php
 
 $posts = get_posts();

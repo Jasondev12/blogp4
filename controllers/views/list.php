@@ -5,7 +5,7 @@ if(admin()!=1){
 
 ?>
 
-<h2>Listing des articles</h2>
+<h2 id="titre-list">Listing des articles</h2>
 <hr/>
 
 <?php

@@ -32,6 +32,7 @@ if(in_array($page.'.models.php',$views_models)){
     <link href="css/import.css" rel="stylesheet">
     <!--Import font Greatvibes-->
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
     <title>Blog Jean Forteroche | Accueil</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,7 +50,9 @@ if(in_array($page.'.models.php',$views_models)){
             include 'views/'.$page.'.php';
         ?>
     </div>
-
+    <?php
+        include"views/include/footer.php";
+    ?>
 
 
     <!--JavaScript at end of body for optimized loading-->

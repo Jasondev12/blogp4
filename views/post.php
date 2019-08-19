@@ -95,7 +95,7 @@ if($post == false){
                     </div>
 
                     <div class="col s12">
-                        <button type="submit" name="submit" class="btn waves-effect">
+                        <button type="submit" name="submit" class="btn waves-effect light-blue">
                             Commenter ce post
                         </button>
                     </div>
