@@ -11,5 +11,6 @@ function get_posts(){
         $results[] = $rows;
     }
 
+
     return $results;
 }
